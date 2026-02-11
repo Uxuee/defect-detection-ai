@@ -10,7 +10,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 Set-Location $ScriptDir
 
 # Dataset URL and path
-$DATA_URL = *****************
+$DATA_URL = "*****************"
 $OUTPUT_PATH = "data/raw/anomaly_dataset.zip"
 
 # Create folder if missing
@@ -101,3 +101,4 @@ if ($CondaExists) {
 
 Write-Host "Press Enter to exit..." -ForegroundColor Cyan
 Read-Host
+
