@@ -16,7 +16,7 @@ REQUIREMENTS = [
     # Extra for dataset
     "gdown"
 ]
-DATA_URL = "https://drive.google.com/uc?id=1z-57McRCQ5PT6UYbF640BafBJmP3L_Jj"
+DATA_URL = "************"
 DATA_PATH = Path("data/raw/anomaly_dataset.zip")
 DATA_DIR = Path("data/raw")
 

@@ -18,7 +18,7 @@ echo "Activating environment..."
 # Download dataset
 echo "Downloading dataset..."
 pip install gdown 
-DATA_URL="https://drive.google.com/uc?id=1z-57McRCQ5PT6UYbF640BafBJmP3L_Jj"
+DATA_URL="***********************"
 OUTPUT_PATH="data/raw/anomaly_dataset.zip"
 
 # Use gdown to download from Google Drive

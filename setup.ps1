@@ -10,7 +10,7 @@ $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 Set-Location $ScriptDir
 
 # Dataset URL and path
-$DATA_URL = "https://drive.google.com/uc?id=1z-57McRCQ5PT6UYbF640BafBJmP3L_Jj"
+$DATA_URL = *****************
 $OUTPUT_PATH = "data/raw/anomaly_dataset.zip"
 
 # Create folder if missing
