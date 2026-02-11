@@ -30,6 +30,34 @@ Key approaches explored include:
 - Git (optional, for cloning)
 - JupyterLab/Notebook (installed via the provided environment)
 
+### Dataset download link (required)
+
+This repository does **not** include the dataset.  
+To run the project, you must manually provide the dataset download link in any setup file. For example, for `setup.ps1`:
+
+- Open `setup.ps1`
+- Replace the placeholder in:
+  $DATA_URL = "************"
+- Run:
+   .\setup.ps1
+  
+The dataset .zip will be downloaded into data/raw/ (relative to the folder where setup.ps1 is located) and extracted to:
+
+```
+data/raw/archive/train/good/
+data/raw/archive/train/not-good/
+```
+
+Important: the dataset zip must contain the following structure:
+
+```
+archive/
+  train/
+    good/
+    not-good/
+
+```
+
 ### Setup Instructions
 
 This project can be set up in **three ways**, depending on your system and whether you have Conda installed.
