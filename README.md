@@ -38,8 +38,7 @@ To run the project, you must manually provide the dataset download link in any s
 - Open `setup.ps1`
 - Replace the placeholder in:
   $DATA_URL = "************"
-- Run:
-   .\setup.ps1
+- Run: `.\setup.ps1`
   
 The dataset .zip will be downloaded into data/raw/ (relative to the folder where setup.ps1 is located) and extracted to:
 
