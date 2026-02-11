@@ -2,6 +2,26 @@
 
 Reproducible, notebook-first workflow for training and evaluating anomaly detection models. The project includes a Conda environment, an automated setup script for dependencies and data, and a clean directory layout for datasets, checkpoints, and plots.
 
+## Design Philosophy
+
+This project emphasizes building robust machine learning systems under realistic constraints.  
+Rather than relying solely on large datasets, the focus is on developing strategies that remain effective when data is limited — a common scenario in real-world industrial applications.
+
+Key approaches explored include:
+
+- Transfer learning from large pretrained CNNs  
+- Feature extraction to maximize information from small samples  
+- Cross-validation for reliable performance estimates  
+- Careful model comparison to avoid overfitting  
+
+
+## Key Learnings
+
+- Classical ML performed surprisingly well when combined with CNN feature extraction.
+- Gradient boosting captured nonlinear pixel relationships but struggled with rotational variance.
+- Transfer learning improved feature representation but required careful fine-tuning due to dataset size.
+- Dataset variability strongly impacted generalization performance.
+
 ## Quickstart
 
 ### Prerequisites
@@ -174,6 +194,14 @@ Simple Neural Network (baseline)
   conda env export --no-builds > environment.yml
   ```
 - Notebook parameters (e.g., data paths, thresholds, seeds) are set at the top of each notebook. Consider centralizing common settings in one cell for easy tweaks.
+
+## Future Work
+
+- Investigate region-based object detection models (e.g., Faster R-CNN) to better capture localized defects that may be diluted in global image representations.
+- Explore patch-based inference strategies where images are divided into smaller regions prior to classification.
+- Develop techniques specifically tailored for small-data regimes, such as self-supervised learning and advanced data augmentation.
+- Evaluate model robustness under distribution shifts to better simulate real industrial deployment conditions.
+
 
 
 
